@@ -1,0 +1,565 @@
+@media only screen and (min-width: 1081px) {
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 2px 10px 10px rgba(168, 168, 168, 0.4);
+    padding: 10px;
+    margin: -10px;
+    align-items: center;
+    font-family: '-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    position: relative;
+    z-index: 10;
+    height: 50px;
+    width: 100%;
+}
+
+.header-textcontent {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    gap: 40px; /* リンクの間隔 */
+    margin-right: 25px;
+    align-items: center;
+}
+.header-textcontent a:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.header-img {
+    display: block;
+    height: 20px;
+    width: auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 33px;
+}
+.header-img:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+
+.link-one {
+    font-size: 11px;
+    line-height: 1.4;
+    transition: background-color 0.3s ease;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link-two {
+    background-color: rgb(241, 146, 22);
+    border-radius: 30px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 13px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    height: 12px;
+}
+
+.main-content {
+    display: block;
+    padding-top: 202px;
+    padding-left: 192px;
+    position: absolute;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.big-link-two {
+    display: inline-block;
+    background-color: rgb(241, 146, 22);
+    border-radius: 50px;
+    margin-top: -18px;
+    padding: 20px 137px 20px 136px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.big-link-two:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+p {
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.web-engineer {
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    margin: 132px 197px 300px 619px;
+}
+
+.normal-circular-column {
+    border: solid 1px rgb(254, 180, 43);
+    margin-top: -606px;
+    margin-right: 676px;
+    margin-bottom: 270px;
+    margin-left: 81px;
+    width: 207px;
+    height: 657px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-radius: 250px;
+}
+
+.male-circular-column {
+    border: solid 1px transparent;
+    width: 453px;
+    height: 1200px;
+    transform: rotate(45deg);
+    border-radius: 250px;
+    position: relative;
+    z-index: 1;
+    margin-top: -1420px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 970px;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+    margin-top: -763px;
+    margin-right: 300px;
+    margin-bottom: 0px;
+    margin-left: 630px;
+}
+
+.image {
+    height: 653px;
+    width: 803px;
+}
+
+.left-triangle {
+    border-width: 145px 145px;
+    border-style: solid;
+    border-color: orange transparent transparent orange;
+    width: 0;
+    margin-top: -633px;
+    margin-left: -10px;
+    background: linear-gradient(to bottom left, #ffa965, #f07400);
+    /* borderで三角形作ってるからlinear-gradientが効かない。 */
+}
+
+.right-triangle {
+    border-width: 165px 165px;
+    border-style: solid;
+    border-color: transparent orange orange transparent;
+    width: 0;
+    margin-left: 1103px;
+    margin-bottom: 590px;
+    margin-top: 57px;
+    background: linear-gradient(to right, #ffa965, #f07400);
+    /* borderで三角形作ってるからlinear-gradientが効かない。 */
+}
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 768px){
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 2px 10px 10px rgba(168, 168, 168, 0.4);
+    padding: 10px;
+    margin: -10px;
+    align-items: center;
+    font-family: '-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    position: fixed;
+    z-index: 10;
+    height: 50px;
+    width: 100%;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 21px;
+    gap: 3px;
+    margin-right: 40px;
+    /* ハンバーガーメニューをクリックした後の画面表示は必要なし。 */
+}
+.line {
+    height: 2px;
+    width: 20px;
+    background-color: lightgray;
+    /* ハンバーガーメニューをクリックした後の画面表示は必要なし。 */
+}
+
+
+.header-textcontent {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: #333333;
+    border-radius: 5px;
+    justify-content: space-between;
+    text-align: right;
+    gap: 40px; /* リンクの間隔 */
+    margin-right: 25px;
+    align-items: center;
+}
+
+.header-textcontent a:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.header-img {
+    display: block;
+    height: 20px;
+    width: auto;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 33px;
+}
+.header-img:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+
+.link-one {
+    font-size: 11px;
+    line-height: 1.4;
+    transition: background-color 0.3s ease;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link-two {
+    background-color: rgb(241, 146, 22);
+    border-radius: 30px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 13px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    height: 12px;
+}
+
+.main-content {
+    display: block;
+    padding-top: 232px;
+    padding-left: 30px;
+    position: absolute;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.big-link-two {
+    display: inline-block;
+    background-color: rgb(241, 146, 22);
+    border-radius: 50px;
+    margin-top: -18px;
+    padding: 20px 137px 20px 136px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.big-link-two:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+p {
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.web-engineer {
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    margin: 152px 220px 290px 460px;
+}
+
+.normal-circular-column {
+    border: solid 1px rgb(254, 180, 43);
+    margin-top: -606px;
+    margin-right: 676px;
+    margin-bottom: 270px;
+    margin-left: 81px;
+    width: 207px;
+    height: 657px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-radius: 250px;
+}
+
+.male-circular-column {
+    border: solid 1px transparent;
+    max-width: 100%;
+    object-fit: cover;
+    height: 1200px;
+    transform: rotate(45deg);
+    border-radius: 250px;
+    position: relative;
+    z-index: 1;
+    margin-top: -1420px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 970px;
+    background-color: transparent; 
+    object-fit: cover;
+}
+
+.image-container {
+    position: relative;
+    margin-top: -763px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+    margin-left: 270px;
+}
+
+.image {
+    height: 653px;
+    width: 803px;
+}
+
+.left-triangle {
+    border-width: 145px 145px;
+    border-style: solid;
+    border-color: orange transparent transparent orange;
+    width: 0;
+    margin-top: -633px;
+    margin-left: -10px;
+    background: linear-gradient(to bottom left, #ffa965, #f07400);
+    /* borderで三角形作ってるからlinear-gradientが効かない。 */
+}
+
+.right-triangle {
+    border-width: 165px 165px;
+    border-style: solid;
+    border-color: transparent orange orange transparent;
+    width: 0;
+    margin-left: 743px;
+    margin-bottom: 590px;
+    margin-top: 57px;
+    background: linear-gradient(to right, #ffa965, #f07400);
+    /* borderで三角形作ってるからlinear-gradientが効かない。 */
+}
+}
+
+
+@media only screen and (max-width: 767px) {
+    .header-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 2px 10px 10px rgba(168, 168, 168, 0.4);
+    padding: 10px;
+    margin: -10px;
+    align-items: center;
+    font-family: '-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    position: fixed;
+    z-index: 10;
+    height: 50px;
+    width: 100%;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 21px;
+    gap: 3px;
+    margin-right: 40px;
+    /* ハンバーガーメニューをクリックした後の画面表示は必要なし。 */
+}
+.line {
+    height: 2px;
+    width: 20px;
+    background-color: lightgray;
+    /* ハンバーガーメニューをクリックした後の画面表示は必要なし。 */
+}
+
+.header-textcontent {
+    display: none;
+    justify-content: space-between;
+    text-align: right;
+    gap: 40px; /* リンクの間隔 */
+    margin-right: 25px;
+    align-items: center;
+}
+.header-textcontent a:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+
+.header-img {
+    display: block;
+    height: 20px;
+    width: auto;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 33px;
+}
+.header-img:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+
+.link-one {
+    font-size: 11px;
+    line-height: 1.4;
+    transition: background-color 0.3s ease;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link-two {
+    background-color: rgb(241, 146, 22);
+    border-radius: 30px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 13px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    height: 12px;
+}
+
+.main-content {
+    display: block;
+    padding-top: 512px;
+    padding-left: 7px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 23px;
+}
+
+.big-link-two {
+    display: inline-block;
+    background-color: rgb(241, 146, 22);
+    border-radius: 50px;
+    margin-top: 1px;
+    padding: 20px 137px 20px 136px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.big-link-two:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+p {
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.web-engineer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
+}
+
+.web-engineer img {
+    width: 100px; 
+    height: 100px; 
+    display: inline-block;
+    margin-top: -400px;
+    margin-left: -150px;
+}
+
+
+.normal-circular-column {
+    display: inline-block;
+    border: solid 1px rgb(254, 180, 43);
+    margin-top: -750px;
+    margin-left: 200px;
+    width: 150px;
+    height: 457px;
+    transform: rotate(45deg);
+    background-color: white;
+    border-radius: 250px;
+    position: absolute;
+    z-index: 1;
+}
+
+.male-circular-column {
+    display: inline-block;
+    border: solid 1px transparent;
+    width: 253px;
+    height: 1000px;
+    transform: rotate(45deg);
+    border-radius: 250px;
+    margin-top: -700px;
+    margin-left: 370px;
+    margin-right: 700px;
+    background-color: transparent;
+    z-index: 11;
+    overflow: hidden;
+}
+
+.image-container {
+    margin-top: -1083px;
+    margin-right: 350px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+    z-index: 9;
+}
+
+.image {
+    height: 527px;
+    width: 664px;
+    position: absolute;
+    z-index: 9;
+}
+
+.left-triangle {
+    border-width: 145px 145px;
+    border-style: solid;
+    border-color: orange transparent transparent orange;
+    width: 0;
+    background: linear-gradient(to bottom left, #ffa965, #f07400);
+    /* borderで三角形作ってるからlinear-gradientが効かない。 */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+}
